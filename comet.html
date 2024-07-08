@@ -3,7 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles/site-plan.css">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    }
+
+    .active, .accordion:hover {
+    background-color: #ccc; 
+    }
+
+    .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -15,6 +42,7 @@
             <a href="comet.html">Comets</a>
             <a href="events.html">Events</a>
         </nav>
+
 
     </header>
     <main>
@@ -34,7 +62,7 @@
             <img src="images/comet-2b.jpg" alt="photo of a comet">
             <p>Photo by Bruno Abdiel: https://www.pexels.com/photo/white-clouds-and-blue-sky-10330498/</p>
         </section>
-        <section class="comet2">
+        <!-- <section class="comet2">
             <h1>The Next Comet</h1>
             <p> Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Fringilla urna porttitor rhoncus dolor purus. Eget arcu dictum varius duis at consectetur lorem.</p>
         </section>
@@ -45,7 +73,23 @@
         <section class="comet4">
             <h1>The Next Comet</h1>
             <p> Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Fringilla urna porttitor rhoncus dolor purus. Eget arcu dictum varius duis at consectetur lorem.</p>
-        </section>
+        </section> -->
+
+        <button class="accordion">Comet 1</button>
+        <div class="panel">
+          <p>Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Fringilla urna porttitor rhoncus dolor purus. Eget arcu dictum varius duis at consectetur lorem.</p>
+        </div>
+        
+        <button class="accordion">Comet 2</button>
+        <div class="panel">
+          <p>Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Fringilla urna porttitor rhoncus dolor purus. Eget arcu dictum varius duis at consectetur lorem.</p>
+        </div>
+        
+        <button class="accordion">Comet 3</button>
+        <div class="panel">
+          <p>Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Fringilla urna porttitor rhoncus dolor purus. Eget arcu dictum varius duis at consectetur lorem.</p>
+        </div>
+        
         <section class="reference">
             <p>https://www.rawpixel.com/search?page=1&path=_topics%7C%24publicdomain&similar=1234362&sort=curated</p>
         </section>
@@ -53,6 +97,26 @@
             <img src="images/comet-3b.jpg" alt="photo of a comet">
             <p>Photo by Kid Lee: https://www.pexels.com/photo/comet-in-starry-sky-5425513/</p>
         </section>
+
+
+
+        
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+            </script>
         <!-- Specific page code -->
     </main>
     <footer>

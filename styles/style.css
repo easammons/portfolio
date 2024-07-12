@@ -220,6 +220,58 @@ nav a:hover {
   border-right: 1px solid;
 }
 
+footer {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  display: grid;
+  grid-template-rows: 1fr, 10px;
+}
+/* footer {
+  list-style-type: none;
+  display: flex;
+
+} */
+
+.footer-pics{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+footer a, footer p {
+  padding:2em;
+  min-width: 120px;
+  text-decoration: none;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color:white;
+  font-family: var(--paragraph-font);
+
+}
+footer a:link, footer a:visited {
+  color: var(--nav-link-color);
+}
+footer a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+footer .social{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.attribution{
+  font-size: 6px;
+}
+.att{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -247,4 +299,34 @@ nav a:hover {
   background-color: white;
   display: none;
   overflow: hidden;
+}
+
+
+
+/* Home specific  */
+.section1{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.home-north{
+  width: 100%;
+}
+
+.section2{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.home-star{
+  width: 100%;
+}
+.tribute1{
+  font-size: 10px;
+}
+
+.section3{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.home-galaxy{
+  width: 100%;
 }

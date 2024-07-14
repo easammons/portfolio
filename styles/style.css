@@ -299,7 +299,21 @@ footer .social{
   background-color: white;
   display: none;
   overflow: hidden;
+  display:grid;
+  grid-template-columns: 1fr 2fr;
 }
+
+.try1{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+.acc-img{
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 

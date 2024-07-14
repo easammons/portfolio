@@ -226,7 +226,7 @@ footer {
   text-align: center;
   font-size: 1.2em;
   display: grid;
-  grid-template-rows: 1fr, 10px;
+  grid-template-rows: 1fr 10px;
 }
 /* footer {
   list-style-type: none;
